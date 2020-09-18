@@ -1,0 +1,410 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>new project</title>
+<script src="https://kit.fontawesome.com/6a8e86b2be.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<!-----navbar----->
+	<div class="input-group group-inputs mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text"><select style="border: none;
+    outline: none;
+    background: #dddddd36;
+">
+	<option >All Filters</option>
+	<option >Addresses</option>
+	<option >Tokens</option>
+	<option >Nam tags</option>
+	<option >Labels</option>
+	<option >Websites</option>
+	</select></span>
+  </div>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"placeholder="Search by Address/Txn Hash/Block/Token/Ens">
+  <div class="input-group-append">
+    <span class="input-group-text bg-success"><i class="fas fa-search text-white p-2"></i></span>
+  </div>
+</div>
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-white">
+	<div class="container">
+  <a class="navbar-brand" href="#"><img width="50px"src="assest/logo.png" alt="" /></a>
+  <span class="eth">Eth: $362.10 <span class="text-danger">(-3.50%)</span> | 122 Gwei</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarNav">
+   
+    <ul class="navbar-nav ml-auto ">
+      <li class="nav-item active"style="padding:0px 10px ;">
+        <a class="nav-link px-4" href="index.html"style="position:relative">Home </a>
+      </li>
+      
+	   <li class="nav-item dropdown"style="padding:0px 10px ;">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="position:relative">
+          Blockchain
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="view txns.html">View Txns</a>
+          <a class="dropdown-item" href="View Pending Txns.html">View pending Txns</a>
+          <a class="dropdown-item" href="View Contract Internal Txns.html">View Contract Internal Txns</a>
+		  <div class="dropdown-divider"></div>
+			     <a class="dropdown-item" href="view Block.html">View Blocks</a>
+          <a class="dropdown-item" href="Forked Blocks (Reorgs).html">Forked Blocks (Reorgs)</a>
+          <a class="dropdown-item" href="Uncles.html">View Uncles</a>
+		  <div class="dropdown-divider"></div>
+			     <a class="dropdown-item" href="top account.html">Top Accounts</a>
+          <a class="dropdown-item" href="#">Verified Contracts</a>
+          
+        </div>
+      </li>
+      
+	  <li class="nav-item dropdown"style="padding:0px 10px ;">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="position:relative">
+          Tokens
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">ERC20 Top Tokens</a>
+          <a class="dropdown-item" href="#">View ERC20 Transfers</a>
+          <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="#">ERC20 Top Tokens</a>
+          <a class="dropdown-item" href="#">View ERC21 Transfers</a>
+        </div>
+      </li>
+	  
+	  <li class="nav-item dropdown"style="padding:0px 10px ;">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="position:relative">
+          Resources
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Charts & Stats</a>
+          <a class="dropdown-item" href="#">Top Statistics</a>
+           <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="#">Ethereum Directory</a>
+          <a class="dropdown-item" href="#">Explore DApps</a>
+        </div>
+      </li> 
+	  
+	   <li class="nav-item dropdown"style="padding:0px 10px ;">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="position:relative">
+          More
+        </a>
+        <div class="dropdown-menu menu-drop" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item item-dropdown" href="#">View Txns</a>
+          <a class="dropdown-item item-dropdown" href="#">View pending Txns</a>
+          <a class="dropdown-item item-dropdown" href="#">View Contract Internal Txns</a>
+		    <div class="dropdown-divider "style="float:right"></div>
+			     <a class="dropdown-item item-dropdown" href="#">View Blocks</a>
+          <a class="dropdown-item item-dropdown" href="#">Forked Blocks (Reorgs)</a>
+          <a class="dropdown-item item-dropdown" href="#">View Uncles</a>
+		  <div class="dropdown-divider"></div>
+			     <a class="dropdown-item item-dropdown" href="#">Top Accounts</a>
+          <a class="dropdown-item item-dropdown" href="#">Verified Contracts</a>
+          
+        </div>
+      </li>
+	  <li class="nav-item active" style="padding:0px 10px ;border-right:1px solid #ddd;border-left:1px solid #ddd;"style="position:relative">
+        <a class="nav-link px-4" href="#"><i class="fas fa-user-circle p-1"></i>Sing in</a>
+      </li>
+	  <li>
+        <a href="#"> <img style="width:20px;" src="assest/ethereum-icon.png" alt="" /style="position:relative"></a>
+      
+        
+      </li>
+     
+    </ul>
+  </div>
+  </div>
+</nav>
+
+	<!-----header------>
+	<h3 class="transactions">Top Accounts by ETH Balance </h3>
+	
+	<hr/>
+	<span class=" featured">Featured:  <span style="font-weight:bold">Track your ETH 2.0 </span>   Testnet Validator deposits and returns on  <a href="#"> BeaconScan.com! </a>  </span>
+	<!------full block--->
+	<div class="fulls-blocks"> 
+	
+	<span class="more-than">A total of > <a href="#"> 1,999,999 accounts found</a> </span><span class="found">   (112,642,497.217 Ether)</span>
+	<span class="top-accounts">(Showing the last 10000 top accounts only)</span>
+	<span class="first">First</span>
+	<span class="right"><</span>
+	<span class="page">page 1 of 5604</span>
+	<span class="left">></span>
+	<span class="last">Last</span>
+	<div class="main-col"> 
+	<div class="col-one">
+	<span class="rank">Rank</span>
+	<span class="adderss">Address</span>
+	<span class="name-teg"> Name Tag </span> 
+	<span class="balance"><img width="20px;"src="assest/down.png"style="padding:0px 5px " alt="" />Balance</span>
+	
+	<span class="Percentage">Percentage</span>
+	
+	
+	<span class="txn-count">Txn Count</span>
+	
+	</div>
+	
+	  <div class="col-tow"> 
+	
+	<span class="number-12">1</span>
+	 <span class="address-2">0xc02aa39b223fe8d0a0e5c4f27ead9083c756cc2</span>
+	 <span class="Name-teg-2">Wrapped  Ether</span>
+	 <span class="balance-2">6,168,377.53014674 Ether</span>
+	 <span class="percentage-2">5.476953805%</span>
+	 <span class="txn-count-2">829,253 </span>
+	  
+	
+	
+	  </div>
+	  <div class="col-tow"> 
+	
+	<span class="number-12">1</span>
+	 <span class="address-2">0xc02aa39b223fe8d0a0e5c4f27ead9083c756cc2</span>
+	 <span class="Name-teg-2">Wrapped  Ether</span>
+	 <span class="balance-2">6,168,377.53014674 Ether</span>
+	 <span class="percentage-2">5.476953805%</span>
+	 <span class="txn-count-2">829,253 </span>
+	  
+	
+	
+	  </div>
+	    <div class="col-tow"> 
+	
+	<span class="number-12">2</span>
+	 <span class="address-2">0xc02aa39b223fe8d0a0e5c4f27ead9083c756cc2</span>
+	 <span class="Name-teg-2">Wrapped  Ether</span>
+	 <span class="balance-2">6,168,377.53014674 Ether</span>
+	 <span class="percentage-2">5.476953805%</span>
+	 <span class="txn-count-2">829,253 </span>
+	  
+	
+	
+	  </div>
+	    <div class="col-tow"> 
+	
+	<span class="number-12">3</span>
+	 <span class="address-2">0xc02aa39b223fe8d0a0e5c4f27ead9083c756cc2</span>
+	 <span class="Name-teg-2">Wrapped  Ether</span>
+	 <span class="balance-2">6,168,377.53014674 Ether</span>
+	 <span class="percentage-2">5.476953805%</span>
+	 <span class="txn-count-2">829,253 </span>
+	  
+	
+	
+	  </div>
+	    <div class="col-tow"> 
+	
+	<span class="number-12">4</span>
+	 <span class="address-2">0xc02aa39b223fe8d0a0e5c4f27ead9083c756cc2</span>
+	 <span class="Name-teg-2">Wrapped  Ether</span>
+	 <span class="balance-2">6,168,377.53014674 Ether</span>
+	 <span class="percentage-2">5.476953805%</span>
+	 <span class="txn-count-2">829,253 </span>
+	  
+	
+	
+	  </div>
+	    <div class="col-tow"> 
+	
+	<span class="number-12">5</span>
+	 <span class="address-2">0xc02aa39b223fe8d0a0e5c4f27ead9083c756cc2</span>
+	 <span class="Name-teg-2">Wrapped  Ether</span>
+	 <span class="balance-2">6,168,377.53014674 Ether</span>
+	 <span class="percentage-2">5.476953805%</span>
+	 <span class="txn-count-2">829,253 </span>
+	  
+	
+	
+	  </div>
+	    <div class="col-tow"> 
+	
+	<span class="number-12">6</span>
+	 <span class="address-2">0xc02aa39b223fe8d0a0e5c4f27ead9083c756cc2</span>
+	 <span class="Name-teg-2">Wrapped  Ether</span>
+	 <span class="balance-2">6,168,377.53014674 Ether</span>
+	 <span class="percentage-2">5.476953805%</span>
+	 <span class="txn-count-2">829,253 </span>
+	  
+	
+	
+	  </div>
+	    <div class="col-tow"> 
+	
+	<span class="number-12">7</span>
+	 <span class="address-2">0xc02aa39b223fe8d0a0e5c4f27ead9083c756cc2</span>
+	 <span class="Name-teg-2">Wrapped  Ether</span>
+	 <span class="balance-2">6,168,377.53014674 Ether</span>
+	 <span class="percentage-2">5.476953805%</span>
+	 <span class="txn-count-2">829,253 </span>
+	  
+	
+	
+	  </div>
+	    <div class="col-tow"> 
+	
+	<span class="number-12">8</span>
+	 <span class="address-2">0xc02aa39b223fe8d0a0e5c4f27ead9083c756cc2</span>
+	 <span class="Name-teg-2">Wrapped  Ether</span>
+	 <span class="balance-2">6,168,377.53014674 Ether</span>
+	 <span class="percentage-2">5.476953805%</span>
+	 <span class="txn-count-2">829,253 </span>
+	  
+	
+	
+	  </div>
+	    <div class="col-tow"> 
+	
+	<span class="number-12">9</span>
+	 <span class="address-2">0xc02aa39b223fe8d0a0e5c4f27ead9083c756cc2</span>
+	 <span class="Name-teg-2">Wrapped  Ether</span>
+	 <span class="balance-2">6,168,377.53014674 Ether</span>
+	 <span class="percentage-2">5.476953805%</span>
+	 <span class="txn-count-2">829,253 </span>
+	  
+	
+	
+	  </div>
+	    <div class="col-tow"> 
+	
+	<span class="number-12">10</span>
+	 <span class="address-2">0xc02aa39b223fe8d0a0e5c4f27ead9083c756cc2</span>
+	 <span class="Name-teg-2">Wrapped  Ether</span>
+	 <span class="balance-2">6,168,377.53014674 Ether</span>
+	 <span class="percentage-2">5.476953805%</span>
+	 <span class="txn-count-2">829,253 </span>
+	  
+	
+	
+	  </div>
+	    <div class="col-tow"> 
+	
+	<span class="number-12">11</span>
+	 <span class="address-2">0xc02aa39b223fe8d0a0e5c4f27ead9083c756cc2</span>
+	 <span class="Name-teg-2">Wrapped  Ether</span>
+	 <span class="balance-2">6,168,377.53014674 Ether</span>
+	 <span class="percentage-2">5.476953805%</span>
+	 <span class="txn-count-2">829,253 </span>
+	  
+	
+	
+	  </div>
+	    <div class="col-tow"> 
+	
+	<span class="number-12">12</span>
+	 <span class="address-2">0xc02aa39b223fe8d0a0e5c4f27ead9083c756cc2</span>
+	 <span class="Name-teg-2">Wrapped  Ether</span>
+	 <span class="balance-2">6,168,377.53014674 Ether</span>
+	 <span class="percentage-2">5.476953805%</span>
+	 <span class="txn-count-2">829,253 </span>
+	  
+	
+	
+	  </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	
+	  <div class="show-block"> 
+	  <span class="show">Show</span>
+	  <select class="select">
+	  <option >10</option>
+	  <option >25</option>
+	  <option >50</option>
+	  <option >100</option>
+	  </select>
+	  <span class="records">Records</span>
+	  <span class="first">First</span>
+	<span class="right"><</span>
+	<span class="page">page 1 of 10000</span>
+	<span class="left">></span>
+	<span class="last">Last</span>
+	  
+	  </div>
+	  
+	
+	</div>
+	
+	
+	</div>
+	
+	
+	<footer class="clearfix">
+<div class="footer-ist"> 
+<div class="header"><img width="25px" src="assest/ethereum (3).png" alt="" /><h1>Powered by Ethereum</h1></div>
+<p>Etherscan is a Block Explorer and Analytics Platform<br/> for Ethereum, a decentralized smart contracts<br/> platform.</p>
+</div>
+ <div class="footer-2nd"> 
+ <div class="headers h4">Company</div>
+ <ul> 
+ <li><a href="#">About Us</a></li>
+ <li><a href="#">Advertise</a></li>
+ <li><a href="#">Contact Us</a></li>
+ <li><a href="#"> Brand Assets</a></li>
+ <li><a href="#">Terms of Service</a></li>
+ </ul>
+ </div>
+
+
+ <div class="footer-3nd"> 
+ <div class="headers h4">Community</div>
+ <ul> 
+ <li><a href="#">Developer APIs</a></li>
+ <li><a href="#">Knowledge Base</a></li>
+ <li><a href="#">Newseletter</a></li>
+ <li><a href="#">Network Status</a></li>
+ <li><a href="#">Disqus Comments</a></li>
+ </ul>
+ </div>
+
+ <div class="footer-4nd"> 
+ <div class="headers h4">Products</div>
+ <ul> 
+ <li><a href="#">Blockscan</a></li>
+ <li><a href="#">Libra Block Explorer</a></li>
+ <li><a href="#">Grin Explorer</a></li>
+ <li><a href="#">ETHProtect</a></li>
+ <li><a href="#">Binance smart Chain Explorer</a></li>
+ </ul>
+<p>New</p>
+ </div>
+	</footer>
+	
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript"> 
+$('[data-toggle="tooltip"]').tooltip();
+function toggleToolTip(){
+$('#hello').tooltip('toggle');
+}
+
+</script>
+</body>
+</html>
